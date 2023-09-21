@@ -1,0 +1,276 @@
+body {
+  background-image: url(img/background.png);
+  text-align: center;
+  font-family: "M PLUS Rounded 1c";
+  color: #24211c;
+  margin: 0;
+}
+
+main {
+  background-image: url(img/balloon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 270px;
+}
+
+.ABOUT {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+nav ul li {
+  padding: 20px 40px;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #24211c;
+}
+a:visited {
+  color: #24211c;
+}
+
+.triangle {
+  position: relative;
+  background-color: #ffffff;
+  height: 80px;
+}
+
+.triangle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 22px 0 22px;
+  border-color: #ffffff transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
+
+.title_logo {
+  width: 700px;
+  height: auto;
+}
+
+main img {
+  left: 0;
+}
+
+.introduction {
+  background-color: #ffffff;
+  margin: 100px 100px;
+  padding: 80px;
+  background-image: url(img/lion.png);
+  background-repeat: no-repeat;
+  background-position: 95% 100%;
+  background-size: 13%;
+}
+
+.introduction p {
+  line-height: 45px;
+}
+
+.introduction p:first-child {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-top: 50px;
+  text-decoration: underline;
+  text-decoration-color: #87cefa;
+}
+
+.explanation {
+  background-color: #ffffff;
+  margin: 100px 100px;
+  padding: 80px;
+  background-image: url(img/kirin.png), url(img/garland.png);
+  background-repeat: no-repeat, repeat-x;
+  background-position: 5% 100%, 0% 0%;
+  background-size: 12%, 13%;
+}
+.explanation p {
+  line-height: 45px;
+}
+
+.problem {
+  background-color: #ffffff;
+  margin: 100px 100px;
+  padding: 80px;
+  background-image: url(img/koara.png), url(img/koara2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 5% 100%, 95% 100%;
+  background-size: 13%;
+}
+
+.problem p {
+  line-height: 45px;
+}
+
+.howtouse {
+  background-color: #ffffff;
+  margin: 100px 100px;
+  padding: 80px;
+  background-image: url(img/garland2.png);
+  background-repeat: repeat-x;
+  background-position: 0% 0%;
+  background-size: 13%;
+}
+
+.howtouse p {
+  line-height: 45px;
+}
+
+.phone_Home,
+.phone_Setting,
+.phone_GameMain,
+.phone_ToyList,
+.phone_CheckBox,
+.phone_StampGet,
+.phone_StampCard {
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  background-image: url(img/tree.png);
+  height: 240px;
+}
+
+footer p {
+  padding-top: 190px;
+}
+
+@media screen and (max-width: 520px) {
+  /* 520px以下に適用されるCSS*/
+  body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    padding-top: 150px;
+    background-image: none;
+  }
+
+  br {
+    display: none;
+  }
+
+  .ABOUT {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title_logo {
+    width: 320px;
+    height: auto;
+  }
+
+  .introduction {
+    margin: 40px 40px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-position: 95% 100%;
+    background-size: 20%;
+  }
+
+  .introduction p:nth-child(1) {
+    font-size: 1.5em;
+  }
+
+  .introduction p:nth-child(2) {
+    font-size: 15px;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  .explanation {
+    margin: 40px 40px;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    background-position: 5% 100%, 0% 0%;
+    background-size: 18%, 25%;
+  }
+
+  .explanation h3 {
+    font-size: 1.5em;
+  }
+
+  .explanation p {
+    font-size: 15px;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  .problem {
+    margin: 40px 40px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-position: 5% 100%, 95% 100%;
+    background-size: 24%;
+  }
+
+  .problem h3 {
+    font-size: 1.5em;
+  }
+
+  .problem p {
+    font-size: 15px;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  .howtouse {
+    margin: 40px 40px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-position: 0% 0%;
+    background-size: 25%;
+  }
+
+  .howtouse h3 {
+    font-size: 1.5em;
+  }
+
+  .howtouse h4 {
+    font-size: 1.2em;
+  }
+
+  .howtouse p {
+    font-size: 15px;
+    text-align: left;
+    line-height: 40px;
+  }
+}
